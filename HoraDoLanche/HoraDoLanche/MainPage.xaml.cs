@@ -21,8 +21,16 @@ namespace HoraDoLanche
         private void Button_Clicked(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            button.Text = "Humm! Que Delícia!!!";
-            foto.Source = "after_cookie";
+            if (button.Text == "Comer!!!")
+            {
+                button.Text = "Humm! Que Delícia!!!";
+                foto.Source = "after_cookie";
+            } 
+            else
+            {
+                button.Text = "Comer!!!";
+                foto.Source = "before_cookie";
+            } 
         }
     }
 }
